@@ -13,7 +13,7 @@ const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 //Função para construir o about
 async function getAboutGitHub() {
   try {
-    const resposta = await fetch('https:api.github.com/users/thiagoversiani');
+    const resposta = await fetch('https://api.github.com/users/thiagoversiani');
 
     const perfil = await resposta.json();
 
@@ -90,7 +90,7 @@ async function getAboutGitHub() {
 async function getProjectsGitHub(){
   try{
 
-    const resposta = await fetch('https:api.github.com/users/thiagoversiani/repos?sort=update&per_page=6');
+    const resposta = await fetch('https://api.github.com/users/thiagoversiani/repos?sort=update&per_page=6');
 
     const repositorios = await resposta.json();
 
